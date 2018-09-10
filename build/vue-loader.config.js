@@ -15,12 +15,12 @@ module.exports = (isDev) => {
             localIdentName: isDev ? '[path]-[name]-[hash:base64:5]' : "[hash:base64:5]",
             //cssName 中横线连字符 . 转为js 中的 正规命名
             camelCase: true
-        },
+        }
         /*热重载hotReload 根据环境变量来生成*/
         /*postcss直接在全局配置,可以不在这里陪着*/
-        loaders: {
-            'docs': docsLoader,
-        },
+        // loaders: {
+        //     'docs': docsLoader,
+        // },
         /*先用preLoader解析 然后用babel解析, 场景:一般我们先解析TS然后在用babel解析*/
         // preLoader:{},
         /*在babel 解析之后在用postLoader 解析*/

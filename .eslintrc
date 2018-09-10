@@ -1,5 +1,10 @@
 {
   "extends": "standard",
-  "plugins": ["html"],
-  "parser":"babe-eslint"
+  "plugins": [
+    "html"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-new": "off"
+  }
 }

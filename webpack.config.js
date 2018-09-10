@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const config = {
   target: 'web',
-  entry: path.join(__dirname, 'client/index.js'),
+  entry: path.join(__dirname, 'client/define.js'),
   output: {
     filename: 'bundle.[hash:8].js',
     path: path.join(__dirname, 'dist')
@@ -76,7 +76,7 @@ if (isDev) {
   )
 } else {
   config.entry = {
-    app: path.join(__dirname, 'client/index.js'),
+    app: path.join(__dirname, 'client/define.js'),
     vendor: ['vue']
   }
   config.output.filename = '[name].[chunkhash:8].js'

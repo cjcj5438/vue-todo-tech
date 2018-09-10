@@ -28,6 +28,15 @@ npm i husky -D 在提交git的时候进行代码检测
     "precommit":"npm run lint-fix"
 ```
 
+```$xslt
+vue源码里面的文件 C:\Users\chenjing\Desktop\vue-todo-tech\node_modules\vue\dist
+开发环境是vue.runtime.esm.js
+上线环境vue.runtime.js
+默认环境 vue.runtime.common.js
+
+有runtime和没有runtime的区别:
+```
+
 # About
 
 
